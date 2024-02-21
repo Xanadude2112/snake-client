@@ -9,7 +9,10 @@ const connect = function () {
   //this happens the moment the client connects to the server
   conn.on("connect", () => {
     console.log("Successfully connected to the game server");
-    conn.write(`Name: TOM`)
+    conn.write(`Name: TOM`);
+    // setInterval(() => {
+    //   conn.write(`Move: up`);
+    // }, 50)
   });
   //this is put in place to collect the data coming from the server
   conn.on("data", (data) => {
