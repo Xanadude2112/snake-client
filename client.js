@@ -29,8 +29,4 @@ const connect = function () {
   return conn;
 };
 
-console.log("Connecting ...");
-// const client = connect();
-// setupInput(client);
-
 module.exports = {connect}
